@@ -59,6 +59,7 @@ class Post extends AsyncTask {
             MultipartEntityBuilder entity = MultipartEntityBuilder.create();
             entity.setCharset(Charset.defaultCharset());
             File rootPath = Environment.getExternalStorageDirectory();
+            // TODO: Put your file here. Be sure to change extension in the Python code too if not a PNG
             entity.addBinaryBody("image", new File(rootPath + "/DCIM/Drawings/09082018161409.png"));
             entity.addTextBody("text", "dis be some text yo");
             request.setEntity(entity.build());
