@@ -53,7 +53,7 @@ class Post extends AsyncTask {
         try {
             CloseableHttpClient hc = HttpClients.createDefault();
             // TODO: Put your IP here
-            HttpPost request = new HttpPost("http://130.108.218.229:5000/api/post_some_data");
+            HttpPost request = new HttpPost("http://ec2-18-224-86-76.us-east-2.compute.amazonaws.com:5000/api/ai-decision");
 
             // Create our text/image entity
             MultipartEntityBuilder entity = MultipartEntityBuilder.create();
